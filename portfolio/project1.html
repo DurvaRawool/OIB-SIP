@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skincare Chatbot Project</title>
+
+  <style>
+    /* General */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0f111a;
+      color: #e1e1e1;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background-color: #0c0d14;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .navbar .brand {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #fff;
+    }
+
+    .navbar .nav-links {
+      display: flex;
+      gap: 25px;
+    }
+
+    .navbar .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .navbar .nav-links a:hover,
+    .navbar .nav-links .active {
+      color: #4facfe; /* matching button color */
+    }
+
+    /* Project Page */
+    .project-page {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #1c1c2a;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    }
+
+    .project-page h1 {
+      color: #4facfe;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .project-description {
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 25px;
+    }
+
+    .project-description ul {
+      margin-left: 20px;
+      list-style-type: disc;
+    }
+
+    h3 {
+      color: #4facfe;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 10px 15px 20px 0;
+      padding: 10px 25px;
+      background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      border-radius: 8px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(79, 172, 254, 0.4);
+    }
+
+    /* Screenshots (optional) */
+    .screenshots {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 25px;
+    }
+
+    .screenshots img {
+      width: 250px;
+      border-radius: 12px;
+      border: 2px solid #4facfe;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+      transition: transform 0.3s;
+    }
+
+    .screenshots img:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      .screenshots img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="brand">Portfolio</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main class="project-page">
+    <h1>Skincare Chatbot - DermaGPT</h1>
+
+    <p class="project-description">
+      DermaGPT is an AI-powered skincare chatbot designed to provide personalized home remedy solutions. Users can interact with the chatbot to get:
+      <ul>
+        <li>Skin analysis based on a short questionnaire.</li>
+        <li>Personalized skincare routines for oily, dry, combination, or sensitive skin types.</li>
+        <li>Weather-specific, bridal, anti-aging, and daily skincare tips.</li>
+        <li>Remedies and guidance for common skin issues like acne, dryness, and pigmentation.</li>
+      </ul>
+      The chatbot is built using <strong>Django</strong> for backend management, with a modern and interactive frontend interface. Users can save their skin data and receive personalized advice whenever they interact with the chatbot.
+    </p>
+
+    <h3>Live Demo:</h3>
+    <a href="https://your-live-link.com" target="_blank" class="btn">View Live Project</a>
+
+    <h3>Repository:</h3>
+    <a href="https://github.com/yourusername/skincare-chatbot" target="_blank" class="btn">View Repository</a>
+
+    <!-- Optional: Screenshots -->
+    <div class="screenshots">
+      <img src="images/chatbot1.png" alt="Chatbot Screenshot 1">
+      <img src="images/chatbot2.png" alt="Chatbot Screenshot 2">
+      <img src="images/chatbot3.png" alt="Chatbot Screenshot 3">
+    </div>
+  </main>
+
+</body>
+</html>
